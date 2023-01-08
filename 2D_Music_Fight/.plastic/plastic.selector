@@ -1,4 +1,4 @@
 repository "2D_Music_Fight@wongchris@cloud"
   path "/"
-    br "/main"
-    co "/main"
+    smartbranch "/main/branchChris"  
+     
