@@ -5,12 +5,12 @@ public class Bullet : MonoBehaviour
 {
     public enum Attribute { Water, Fire, Grass, Light, Dark };
     public Attribute attribute;
-    private Color bulletColor;
+    [SerializeField]private Color bulletColor;
     public Color[] attributeColors;
 
     void Start()
     {
-        attributeColors[(int)attribute] = bulletColor;
+        bulletColor = attributeColors[(int)attribute];
         GetComponent<Renderer>().material.color = bulletColor;
     }
 

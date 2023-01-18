@@ -2,33 +2,47 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
-    public GameObject[] bulletPrefabs;
-    public Transform bulletSpawn;
-    public float fireRate = 0.5f;
-    public int bulletCount = 10;
-    public float spreadAngle = 10f;
-    public float bulletSpeed = 10f;
-    public float bulletRange = 10f;
-    private float nextFire = 0.0f;
+    public GameObject bulletPrefab;
+    public float[] fireRates = new float[] { 0.5f, 0.3f, 0.8f, 1.0f };
+    public float bulletSpeed = 10.0f;
+    public string[] keys = new string[] { "j", "k", "l", ";" };
+    public Bullet.Attribute[] bulletAttributes = new Bullet.Attribute[] { Bullet.Attribute.Water, Bullet.Attribute.Fire, Bullet.Attribute.Grass, Bullet.Attribute.Light };
+    public float fireCoolDown = 0.1f;
 
-    void Update()
+    private float[] fireTimers;
+    private float cooldownTimers;
+    private bool[] keysPressed;
+
+    private void Start()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            Fire();
-        }
+        fireTimers = new float[keys.Length];
+        keysPressed = new bool[keys.Length];
     }
 
-    void Fire()
+    private void Update()
     {
-        for (int i = 0; i < bulletCount; i++)
+        cooldownTimers += Time.deltaTime;
+        for (int i = 0; i < keys.Length; i++)
         {
-            GameObject bulletPrefab = bulletPrefabs[Random.Range(0, bulletPrefabs.Length)];
-            Quaternion bulletRotation = Quaternion.Euler(0, 0, Random.Range(-spreadAngle, spreadAngle));
-            var bullet = (GameObject)Instantiate(bulletPrefab, bulletSpawn.position, bulletRotation);
-            bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
-            Destroy(bullet, bulletRange / bulletSpeed);
+            fireTimers[i] += Time.deltaTime;
+            if (Input.GetKeyDown(keys[i]))
+            {
+                keysPressed[i] = true;
+            }
+
+            if (keysPressed[i])
+            {
+                if (fireTimers[i] >= fireRates[i] && cooldownTimers >= fireCoolDown)
+                {
+                    GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                    bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
+                    bullet.GetComponent<Bullet>().attribute = bulletAttributes[i];
+                    fireTimers[i] = 0.0f;
+                    cooldownTimers = 0.0f;
+                    keysPressed[i] = false;
+                }
+                keysPressed[i] = false;
+            }
         }
     }
 }

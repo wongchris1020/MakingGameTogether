@@ -32,8 +32,6 @@ public class AddDifferentColor : MonoBehaviour
         while (true)
 		{
             float ObjectIndex = 0;
-            Debug.Log("t="+tick);
-            Debug.Log(revise);
             foreach (Transform Tform in Objs)
             {
                 ObjectIndex += 1/ ColorChangeIndex;
