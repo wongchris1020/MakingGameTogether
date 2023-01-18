@@ -88,10 +88,10 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.677174, y: -1.0118746}
+  m_ConnectedAnchor: {x: 1.677174, y: -1.0118748}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
-  m_DampingRatio: 0.3
+  m_DampingRatio: 0.2
   m_Frequency: 2
 --- !u!231 &8098302016568284813
 SpringJoint2D:
@@ -108,10 +108,10 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.2826555, y: 1.39209}
+  m_ConnectedAnchor: {x: 1.2826557, y: 1.3920898}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
-  m_DampingRatio: 0.3
+  m_DampingRatio: 0.2
   m_Frequency: 2
 --- !u!231 &8098302016568284812
 SpringJoint2D:
@@ -128,10 +128,10 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.22273014, y: -0.49475077}
+  m_ConnectedAnchor: {x: 0.22273023, y: -0.49475092}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
-  m_DampingRatio: 0.3
+  m_DampingRatio: 0.2
   m_Frequency: 2
 --- !u!1 &8098302016703808530
 GameObject:
@@ -211,7 +211,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 576403185
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6cfe0b7624fea954a91f6f617ffc641f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -243,7 +243,7 @@ MonoBehaviour:
   - {fileID: 8098302018268860094}
   - {fileID: 8098302016568284811}
   m_Bounds:
-    m_Center: {x: -0.0000019073486, y: 0.00000023841858, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.66015625, y: 0.66015625, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -383,7 +383,7 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.2907957, y: 1.345799}
+  m_ConnectedAnchor: {x: 1.2907959, y: 1.3457986}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.5
@@ -423,7 +423,7 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5346224, y: -0.9008996}
+  m_ConnectedAnchor: {x: 1.5346224, y: -0.9008999}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.5
@@ -536,7 +536,7 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.5181067, y: 0.89545083}
+  m_ConnectedAnchor: {x: 1.518107, y: 0.8954506}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.5
@@ -556,7 +556,7 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.3055383, y: -1.3578783}
+  m_ConnectedAnchor: {x: 1.3055383, y: -1.3578787}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.5
@@ -649,10 +649,10 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.3185163, y: -1.3386786}
+  m_ConnectedAnchor: {x: 1.318516, y: -1.3386788}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
-  m_DampingRatio: 0.3
+  m_DampingRatio: 0.2
   m_Frequency: 2
 --- !u!231 &8098302018268860091
 SpringJoint2D:
@@ -669,10 +669,10 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.4811136, y: 0.85100985}
+  m_ConnectedAnchor: {x: 1.4811139, y: 0.8510095}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
-  m_DampingRatio: 0.3
+  m_DampingRatio: 0.2
   m_Frequency: 2
 --- !u!231 &8098302018268860090
 SpringJoint2D:
@@ -689,8 +689,8 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.25975853, y: 0.4646149}
+  m_ConnectedAnchor: {x: 0.25975862, y: 0.46461508}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
-  m_DampingRatio: 0.3
+  m_DampingRatio: 0.2
   m_Frequency: 2
