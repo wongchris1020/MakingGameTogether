@@ -30,7 +30,7 @@ public class customHierarchy
 
             //ADD CONDITIONS HERE TO COLOR MORE OBJECTS
             // YOU CAN COLOR FOLLOWING NAME, TAG...
-            if (obj.name == "Main Charactor")
+            if (obj.name == "Player")
             {
                 backgroundColor = new Color(0.2f, 0.6f, 0.1f);
                 textColor = new Color(0.9f, 0.9f, 0.9f);

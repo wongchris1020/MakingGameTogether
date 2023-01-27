@@ -17,7 +17,7 @@ public class CombatDummyController : MonoBehaviour
 
     private bool playerOnLeft, knockback;
 
-    private PlayerController pc;
+    private GameObject Player;
     private GameObject aliveGO, brokenTopGO, brokenBotGO;
     private Rigidbody2D rbAlive, rbBrokenTop, rbBrokenBot;
     private Animator aliveAnim;
@@ -26,7 +26,7 @@ public class CombatDummyController : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        pc = GameObject.Find("Player").GetComponent<PlayerController>();
+        Player = GameObject.Find("Player");
 
         aliveGO = transform.Find("Alive").gameObject;
         brokenTopGO = transform.Find("Broken Top").gameObject;
@@ -47,11 +47,11 @@ public class CombatDummyController : MonoBehaviour
         CheckKnockback();
     }
 
-    private void Damage(AttackDetails details)
+    public void Damage(float damageAmount)
     {
-        currentHealth -= details.damageAmount;
+        currentHealth -= damageAmount;
         
-        if(details.position.x < aliveGO.transform.position.x)
+        if(Player.transform.position.x < aliveGO.transform.position.x)
         {
             playerFacingDirection = 1;
         }
@@ -71,8 +71,8 @@ public class CombatDummyController : MonoBehaviour
             playerOnLeft = false;
         }
 
-        aliveAnim.SetBool("playerOnLeft", playerOnLeft);
-        aliveAnim.SetTrigger("damage");
+        //aliveAnim.SetBool("playerOnLeft", playerOnLeft);
+        //aliveAnim.SetTrigger("damage");
 
         if(applyKnockback && currentHealth > 0.0f)
         {

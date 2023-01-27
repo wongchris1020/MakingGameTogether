@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Enemy
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -14,10 +16,10 @@ TagManager:
   - UI
   - bone
   - Ground
-  - 
-  - 
-  - 
-  - 
+  - Damagable
+  - Dead
+  - Player
+  - Bullet
   - 
   - 
   - 
