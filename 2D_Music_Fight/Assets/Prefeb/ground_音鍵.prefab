@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 5148152211256180309}
   m_Layer: 7
   m_Name: "ground_\u97F3\u9375"
-  m_TagString: Ground
+  m_TagString: KeyGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

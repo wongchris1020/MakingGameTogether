@@ -19,7 +19,7 @@ public class PlayerExplosion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("KeyGround"))
         {
             float fallingSpeed = rb.velocity.y;
             int bulletCountModifier = (int)(-fallingSpeed * senserIndex);

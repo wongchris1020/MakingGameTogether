@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +19,7 @@ public class E1_DeadState : DeadState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("ok");
     }
 
     public override void Exit()

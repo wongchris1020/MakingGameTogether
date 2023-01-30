@@ -9,7 +9,6 @@ public class DummyGetHit : MonoBehaviour
 		if(collision.CompareTag("PlayerBullet"))
 		{
 			Debug.Log("hit");
-			transform.parent.GetComponent<CombatDummyController>().Damage(1f);
 			Destroy(collision.gameObject);
 		}
 	}

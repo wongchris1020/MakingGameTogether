@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
@@ -45,4 +47,11 @@ public class PlayerShooting : MonoBehaviour
             }
         }
     }
+
+    public virtual void OnDrawGizmos()
+    {
+        //Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.maxAgroDistance), 0.2f);
+    }
+
+    
 }

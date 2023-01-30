@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1917bc9a367d14ba890b8deed9360c, type: 3}
   m_Name: E1_DeadStateData
   m_EditorClassIdentifier: 
-  deathChunkParticle: {fileID: 3381540013875328788, guid: c518e75388c88404ba0e962c56933115,
-    type: 3}
-  deathBloodParticle: {fileID: 3989379390413560245, guid: 98c5be8c10cde9b46a6974f4a7b3fb44,
-    type: 3}
+  deathChunkParticle: {fileID: 1962614393226834858, guid: f8826f4736ea2bb4a91d496100720602, type: 3}
+  deathBloodParticle: {fileID: 5096148057906189823, guid: 20419c312e8774646a7b53fd27a2130e, type: 3}
